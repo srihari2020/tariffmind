@@ -1,0 +1,979 @@
+{
+  "summary": {
+    "total_samples": 138,
+    "json_validity_pct": 100.0,
+    "hallucination_rate_pct": 0.0,
+    "acc_2digit_pct": 100.0,
+    "acc_4digit_pct": 100.0,
+    "acc_6digit_pct": 97.44,
+    "abstention_acc_pct": 100.0
+  },
+  "details": [
+    {
+      "gold_code": "850172",
+      "pred_code": "850172",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electric generators; photovoltaic DC generators, of an output exceeding 50W\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8501 and Subheading 850172\", \"hs_code_6digit\": \"850172\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "846729",
+      "pred_code": "846722",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Tools; for working in the hand, with self-contained electric motor; other than saws and drills\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8467 and Subheading 846722\", \"hs_code_6digit\": \"846722\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "841280",
+      "pred_code": "841280",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Engines; pneumatic power engines and motors, n.e.c. in heading no. 8412\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8412 and Subheading 841280\", \"hs_code_6digit\": \"841280\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "842099",
+      "pred_code": "842099",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machines; parts, (other than cylinders), for calendering or other rolling machines, for other than metal or glass\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8420 and Subheading 842099\", \"hs_code_6digit\": \"842099\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Battery pack for portable device, 200 pcs\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"battery chemistry (Li-ion, NiMH, Lead-acid)\", \"primary vs rechargeable\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "850750",
+      "pred_code": "850750",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electric accumulators; nickel-metal hydride, including separators, whether or not rectangular (including square)\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8507 and Subheading 850750\", \"hs_code_6digit\": \"850750\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "852799",
+      "pred_code": "852799",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Radio-broadcast receivers n.e.c. in heading no. 8527; not combined with sound recording or reproducing apparatus and not combined with a clock\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8527 and Subheading 852799\", \"hs_code_6digit\": \"852799\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Insulated cables with connectors, 500m\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"voltage rating (e.g., <=80V, 80V-1000V, >1000V)\", \"conductor material (copper/optical)\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "850860",
+      "pred_code": "850860",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Vacuum cleaners, other than with a self-contained electric motor\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8508 and Subheading 850860\", \"hs_code_6digit\": \"850860\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "844317",
+      "pred_code": "844317",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Printing machinery; gravure\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8443 and Subheading 844317\", \"hs_code_6digit\": \"844317\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "841911",
+      "pred_code": "841911",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Heaters; instantaneous gas water heaters, for domestic or other purposes\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8419 and Subheading 841911\", \"hs_code_6digit\": \"841911\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "842620",
+      "pred_code": "842620",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Cranes; tower cranes\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8426 and Subheading 842620\", \"hs_code_6digit\": \"842620\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "844833",
+      "pred_code": "844833",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machines; parts and accessories of machines or auxiliary machinery, spindles, spindle flyers, spinning rings and ring travellers\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8448 and Subheading 844833\", \"hs_code_6digit\": \"844833\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851511",
+      "pred_code": "851511",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Brazing or soldering machines and apparatus; soldering irons and guns, whether or not capable of cutting\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8515 and Subheading 851511\", \"hs_code_6digit\": \"851511\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Metal machine part, custom CNC machined, 20 pcs\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"specific machine it is solely/principally used with\", \"exact metal alloy\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "848060",
+      "pred_code": "848060",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Moulds; for mineral materials\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8480 and Subheading 848060\", \"hs_code_6digit\": \"848060\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Display screen panel, 15 inch, 30 pcs\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"panel technology (LCD/OLED)\", \"whether it includes touch/driver electronics\", \"end-use device\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Display screen panel, 15 inch, 30 pcs\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"panel technology (LCD/OLED)\", \"whether it includes touch/driver electronics\", \"end-use device\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "852110",
+      "pred_code": "852110",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Video recording or reproducing apparatus; magnetic tape-type\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8521 and Subheading 852110\", \"hs_code_6digit\": \"852110\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "841182",
+      "pred_code": "841182",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Turbines; gas-turbines (excluding turbo-jets and turbo-propellers), of a power exceeding 5000kW\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8411 and Subheading 841182\", \"hs_code_6digit\": \"841182\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "840732",
+      "pred_code": "840732",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Engines; reciprocating piston engines, of a kind used for the propulsion of vehicles of chapter 87, of a cylinder capacity exceeding 50cc but not exceeding 250cc\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8407 and Subheading 840732\", \"hs_code_6digit\": \"840732\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "854720",
+      "pred_code": "854720",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Insulating fittings; of plastics, for electrical machines, of insulating material only (except minor assembly parts), excluding those of heading no. 8546\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8547 and Subheading 854720\", \"hs_code_6digit\": \"854720\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "844315",
+      "pred_code": "844315",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Printing machinery; letterpress, other than reel-fed, excluding flexographic printing\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8443 and Subheading 844315\", \"hs_code_6digit\": \"844315\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "841191",
+      "pred_code": "841191",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Turbines; parts of turbo-jets and turbo-propellers\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8411 and Subheading 841191\", \"hs_code_6digit\": \"841191\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "848630",
+      "pred_code": "848630",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machines and apparatus of a kind used solely or principally for the manufacture of flat panel displays\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8486 and Subheading 848630\", \"hs_code_6digit\": \"848630\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "846721",
+      "pred_code": "846721",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Tools; for working in the hand, with self-contained electric motor; drills of all kinds\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8467 and Subheading 846721\", \"hs_code_6digit\": \"846721\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851180",
+      "pred_code": "851180",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Ignition or starting equipment; n.e.c. in heading no. 8511, of a kind used for spark or compression-ignition internal combustion engines\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8511 and Subheading 851180\", \"hs_code_6digit\": \"851180\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "846781",
+      "pred_code": "846781",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Tools; for working in the hand, chain saws with self-contained non-electric motor\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8467 and Subheading 846781\", \"hs_code_6digit\": \"846781\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "842630",
+      "pred_code": "842630",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Cranes; portal or pedestal jib cranes\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8426 and Subheading 842630\", \"hs_code_6digit\": \"842630\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "848010",
+      "pred_code": "848010",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Moulding boxes; for metal foundry\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8480 and Subheading 848010\", \"hs_code_6digit\": \"848010\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "845530",
+      "pred_code": "845530",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Metal-rolling mills; rolls thereof\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8455 and Subheading 845530\", \"hs_code_6digit\": \"845530\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "852719",
+      "pred_code": "852719",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Radio broadcast receivers capable of operating without an external power source; n.e.c. in item no. 8527.1\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8527 and Subheading 852719\", \"hs_code_6digit\": \"852719\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "854143",
+      "pred_code": "854143",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electrical apparatus; photosensitive semiconductor devices, photovoltaic cells assembled in modules or made up into panels\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8541 and Subheading 854143\", \"hs_code_6digit\": \"854143\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "850980",
+      "pred_code": "850980",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electro-mechanical domestic appliances; with self-contained electric motor, other than vacuum cleaners of heading 85.08, n.e.c. in heading no. 8509\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8509 and Subheading 850980\", \"hs_code_6digit\": \"850980\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "842310",
+      "pred_code": "842310",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Weighing machines; personal (including baby scales) and household scales\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8423 and Subheading 842310\", \"hs_code_6digit\": \"842310\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "848420",
+      "pred_code": "848420",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Seals; mechanical\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8484 and Subheading 848420\", \"hs_code_6digit\": \"848420\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "854913",
+      "pred_code": "854913",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Waste and scrap; of primary cells, primary batteries and electric accumulators, spent or not, sorted by chemical type and not containing lead, cadmium or mercury\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8549 and Subheading 854913\", \"hs_code_6digit\": \"854913\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "843840",
+      "pred_code": "843840",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machinery; industrial, brewery machinery\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8438 and Subheading 843840\", \"hs_code_6digit\": \"843840\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "841912",
+      "pred_code": "841912",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Heaters; solar water heaters, non-electric\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8419 and Subheading 841912\", \"hs_code_6digit\": \"841912\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "842951",
+      "pred_code": "842951",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Front-end shovel loaders\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8429 and Subheading 842951\", \"hs_code_6digit\": \"842951\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "841710",
+      "pred_code": "841710",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Furnaces and ovens; non-electric, for the roasting, melting or other heat-treatment of ores, pyrites or of metals, for industrial or laboratory use\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8417 and Subheading 841710\", \"hs_code_6digit\": \"841710\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "843890",
+      "pred_code": "843890",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machinery; parts of those machines used in the industrial preparation or manufacture of food or drink\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8438 and Subheading 843890\", \"hs_code_6digit\": \"843890\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "853190",
+      "pred_code": "853190",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Signalling apparatus; parts of the electric, sound or visual apparatus of heading no. 8531\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8531 and Subheading 853190\", \"hs_code_6digit\": \"853190\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "853931",
+      "pred_code": "853931",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Lamps; discharge, (excluding ultra-violet), fluorescent, hot cathode\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8539 and Subheading 853931\", \"hs_code_6digit\": \"853931\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "843110",
+      "pred_code": "843110",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machinery; parts of the machinery of heading no. 8425\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8431 and Subheading 843110\", \"hs_code_6digit\": \"843110\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "847689",
+      "pred_code": "847689",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machines; automatic goods-vending machines, (e.g. postage stamp, cigarette, food or money-changing machines, excluding beverage-vending machines), not incorporating heating or refrigerating devices\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8476 and Subheading 847689\", \"hs_code_6digit\": \"847689\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "850151",
+      "pred_code": "850151",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electric motors; AC motors, multi-phase, of an output not exceeding 750W\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8501 and Subheading 850151\", \"hs_code_6digit\": \"850151\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "848310",
+      "pred_code": "848310",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Transmission shafts (including cam shafts and crank shafts) and cranks\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8483 and Subheading 848310\", \"hs_code_6digit\": \"848310\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851713",
+      "pred_code": "851713",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Telephone sets; smartphones for cellular or other wireless networks\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8517 and Subheading 851713\", \"hs_code_6digit\": \"851713\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Battery pack for portable device, 200 pcs\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"battery chemistry (Li-ion, NiMH, Lead-acid)\", \"primary vs rechargeable\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "843850",
+      "pred_code": "843850",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machinery; industrial, for the preparation of meat or poultry\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8438 and Subheading 843850\", \"hs_code_6digit\": \"843850\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "844530",
+      "pred_code": "844530",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Textile machinery; doubling or twisting machines\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8445 and Subheading 844530\", \"hs_code_6digit\": \"844530\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Electric motor assembly, 50 units\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"AC vs DC motor\", \"output power in watts (W) or kW\", \"single-phase vs multi-phase\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "850163",
+      "pred_code": "850163",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electric generators; AC generators, (alternators), other than photovoltaic generators, of an output exceeding 375kVA but not exceeding 750kVA\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8501 and Subheading 850163\", \"hs_code_6digit\": \"850163\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "850760",
+      "pred_code": "850760",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electric accumulators; lithium-ion, including separators, whether or not rectangular (including square)\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8507 and Subheading 850760\", \"hs_code_6digit\": \"850760\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "844314",
+      "pred_code": "844314",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Printing machinery; letterpress, reel-fed, excluding flexographic printing\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8443 and Subheading 844314\", \"hs_code_6digit\": \"844314\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "845019",
+      "pred_code": "845019",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Washing machines; household or laundry-type, not fully-automatic, without built-in centrifugal drier, of a dry linen capacity not exceeding 10kg\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8450 and Subheading 845019\", \"hs_code_6digit\": \"845019\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Battery pack for portable device, 200 pcs\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"battery chemistry (Li-ion, NiMH, Lead-acid)\", \"primary vs rechargeable\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "850710",
+      "pred_code": "850710",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electric accumulators; lead-acid, of a kind used for starting piston engines, including separators, whether or not rectangular (including square)\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8507 and Subheading 850710\", \"hs_code_6digit\": \"850710\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "840110",
+      "pred_code": "840110",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Nuclear reactors; fuel elements (cartridges), non-irradiated, for nuclear reactors, machinery and apparatus for isotopic separation\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8401 and Subheading 840110\", \"hs_code_6digit\": \"840110\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "850780",
+      "pred_code": "850780",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electric accumulators; other than lead-acid, nickel-cadmium, nickel-metal hydride and lithium-ion, including separators, whether or not rectangular (including square)\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8507 and Subheading 850780\", \"hs_code_6digit\": \"850780\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "841112",
+      "pred_code": "841112",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Turbo-jets; of a thrust exceeding 25kN\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8411 and Subheading 841112\", \"hs_code_6digit\": \"841112\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "844230",
+      "pred_code": "844240",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machinery, apparatus and equipment (excluding machines of heading no. 8456 to 8465) for preparing or making printing components\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8442 and Subheading 844240\", \"hs_code_6digit\": \"844240\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "847149",
+      "pred_code": "847149",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Automatic data processing machines; presented in the form of systems, n.e.c. in item no. 8471.30 or 8471.41\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8471 and Subheading 847149\", \"hs_code_6digit\": \"847149\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "847950",
+      "pred_code": "847950",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machinery and mechanical appliances; industrial robots, n.e.c. or included\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8479 and Subheading 847950\", \"hs_code_6digit\": \"847950\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "853932",
+      "pred_code": "853932",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Lamps; discharge, (excluding ultra-violet), mercury or sodium vapour lamps, metal halide lamps\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8539 and Subheading 853932\", \"hs_code_6digit\": \"853932\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "840721",
+      "pred_code": "840721",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Engines; outboard motors for marine propulsion, spark-ignition reciprocating or rotary internal combustion piston engines\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8407 and Subheading 840721\", \"hs_code_6digit\": \"840721\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "847030",
+      "pred_code": "847030",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Calculating machines; non-electronic\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8470 and Subheading 847030\", \"hs_code_6digit\": \"847030\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Insulated cables with connectors, 500m\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"voltage rating (e.g., <=80V, 80V-1000V, >1000V)\", \"conductor material (copper/optical)\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "848530",
+      "pred_code": "848530",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machines for additive manufacturing; by plaster, cement, ceramics or glass deposit\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8485 and Subheading 848530\", \"hs_code_6digit\": \"848530\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "846242",
+      "pred_code": "846242",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machine-tools; punching, notching or nibbling machines (excluding presses) for flat products including combined punching and shearing machines, numerically controlled, for working metal\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8462 and Subheading 846242\", \"hs_code_6digit\": \"846242\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "842482",
+      "pred_code": "842482",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Mechanical appliances; agricultural or horticultural, n.e.c. in heading 8424\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8424 and Subheading 842482\", \"hs_code_6digit\": \"842482\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "847180",
+      "pred_code": "847180",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Units of automatic data processing machines; n.e.c. in item no. 8471.50, 8471.60 or 8471.70\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8471 and Subheading 8471.80\", \"hs_code_6digit\": \"847180\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "840610",
+      "pred_code": "840610",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Turbines; steam and other vapour turbines, for marine propulsion\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8406 and Subheading 840610\", \"hs_code_6digit\": \"840610\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "847431",
+      "pred_code": "847431",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machines; concrete or mortar mixers\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8474 and Subheading 847431\", \"hs_code_6digit\": \"847431\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "841391",
+      "pred_code": "841391",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Pumps; parts thereof\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8413 and Subheading 841391\", \"hs_code_6digit\": \"841391\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "844180",
+      "pred_code": "844180",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machinery; n.e.c. in heading no. 8441, for making up paper pulp, paper or paperboard\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8441 and Subheading 844180\", \"hs_code_6digit\": \"844180\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "840810",
+      "pred_code": "840810",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Engines; for marine propulsion, compression-ignition internal combustion piston engines (diesel or semi-diesel engines)\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8408 and Subheading 840810\", \"hs_code_6digit\": \"840810\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Insulated cables with connectors, 500m\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"voltage rating (e.g., <=80V, 80V-1000V, >1000V)\", \"conductor material (copper/optical)\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "847210",
+      "pred_code": "847210",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Office machines; duplicating machines\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8472 and Subheading 847210\", \"hs_code_6digit\": \"847210\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "854232",
+      "pred_code": "854232",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electronic integrated circuits; memories\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8542 and Subheading 854232\", \"hs_code_6digit\": \"854232\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "843680",
+      "pred_code": "843680",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machinery; for agricultural, horticultural or forestry use and n.e.c. in heading no. 8436\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8436 and Subheading 843680\", \"hs_code_6digit\": \"843680\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "840220",
+      "pred_code": "840220",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Boilers; super-heated water boilers\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8402 and Subheading 840220\", \"hs_code_6digit\": \"840220\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "842820",
+      "pred_code": "842820",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Elevators and conveyors; pneumatic\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8428 and Subheading 842820\", \"hs_code_6digit\": \"842820\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "852210",
+      "pred_code": "852210",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Sound recording or reproducing apparatus; parts and accessories thereof, pick-up cartridges\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8522 and Subheading 852210\", \"hs_code_6digit\": \"852210\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Metal machine part, custom CNC machined, 20 pcs\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"specific machine it is solely/principally used with\", \"exact metal alloy\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "846599",
+      "pred_code": "846599",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machine-tools; for working wood, cork, bone, hard rubber, hard plastics or similar hard materials; n.e.c. in heading no. 8465\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8465 and Subheading 846599\", \"hs_code_6digit\": \"846599\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "854239",
+      "pred_code": "854239",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electronic integrated circuits; n.e.c. in heading no. 8542\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8542 and Subheading 854239\", \"hs_code_6digit\": \"854239\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Insulated cables with connectors, 500m\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"voltage rating (e.g., <=80V, 80V-1000V, >1000V)\", \"conductor material (copper/optical)\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "842511",
+      "pred_code": "842511",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Pulley tackle and hoists; powered by an electric motor (excluding skip hoists or hoists of a kind used for raising vehicles)\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8425 and Subheading 842511\", \"hs_code_6digit\": \"842511\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "842230",
+      "pred_code": "842230",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machinery; for filling, closing, sealing, capsuling or labelling bottles, cans, bags or other containers, machinery for aerating beverages\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8422 and Subheading 842230\", \"hs_code_6digit\": \"842230\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Metal machine part, custom CNC machined, 20 pcs\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"specific machine it is solely/principally used with\", \"exact metal alloy\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Battery pack for portable device, 200 pcs\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"battery chemistry (Li-ion, NiMH, Lead-acid)\", \"primary vs rechargeable\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "853329",
+      "pred_code": "853329",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electrical resistors; fixed, for a power handling capacity exceeding 20W (including rheostats and potentiometers but excluding heating resistors and carbon resistors)\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8533 and Subheading 853329\", \"hs_code_6digit\": \"853329\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "845630",
+      "pred_code": "845630",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machine-tools; for working any material by removal of material, operated by electro-discharge processes\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8456 and Subheading 845630\", \"hs_code_6digit\": \"845630\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Electronic module, black plastic casing, 100 units\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"primary function/application\", \"voltage/power rating\", \"whether programmable or passive\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "853224",
+      "pred_code": "853224",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electrical capacitors; fixed, ceramic dielectric, multilayer\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8532 and Subheading 853224\", \"hs_code_6digit\": \"853224\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "846691",
+      "pred_code": "846691",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Parts & accessories suited for use solely/principally; for the machines of heading no. 8464, n.e.c. in heading no. 8466\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8466 and Subheading 846691\", \"hs_code_6digit\": \"846691\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "847021",
+      "pred_code": "847021",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Calculating machines; electronic, incorporating a printing device, needing an external source of power\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8470 and Subheading 847021\", \"hs_code_6digit\": \"847021\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "852491",
+      "pred_code": "852491",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Flat panel display modules, whether or not incorporating touch-sensitive screens; of liquid crystals, with drivers or control circuits\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8524 and Subheading 852491\", \"hs_code_6digit\": \"852491\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "845891",
+      "pred_code": "845891",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Lathes; for removing metal, numerically controlled, other than horizontal lathes\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8458 and Subheading 845891\", \"hs_code_6digit\": \"845891\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "844316",
+      "pred_code": "844316",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Printing machinery; flexographic\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8443 and Subheading 844316\", \"hs_code_6digit\": \"844316\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "846229",
+      "pred_code": "846224",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machine-tools; bending, folding, straightening or flattening machines (including presses), for working metal, numerically controlled panel benders\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8462 and Subheading 846224\", \"hs_code_6digit\": \"846224\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851529",
+      "pred_code": "851529",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Welding machines and apparatus; for resistance welding of metal, other than fully or partly automatic, whether or not capable of cutting\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8515 and Subheading 851529\", \"hs_code_6digit\": \"851529\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "846031",
+      "pred_code": "846031",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machine-tools; sharpening (tool or cutter grinding) machines, numerically controlled\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8460 and Subheading 846031\", \"hs_code_6digit\": \"846031\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Battery pack for portable device, 200 pcs\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"battery chemistry (Li-ion, NiMH, Lead-acid)\", \"primary vs rechargeable\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "841410",
+      "pred_code": "841410",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Pumps; vacuum\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8414 and Subheading 841410\", \"hs_code_6digit\": \"841410\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "850870",
+      "pred_code": "850870",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Vacuum cleaners - Parts of vacuum cleaners\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8508 and Subheading 850870\", \"hs_code_6digit\": \"850870\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851640",
+      "pred_code": "851640",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Smoothing irons; electric\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8516 and Subheading 851640\", \"hs_code_6digit\": \"851640\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851633",
+      "pred_code": "851633",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Hand-drying apparatus; electro-thermic\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8516 and Subheading 851633\", \"hs_code_6digit\": \"851633\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851621",
+      "pred_code": "851621",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Heating apparatus; electric storage heating radiators\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8516 and Subheading 851621\", \"hs_code_6digit\": \"851621\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "842870",
+      "pred_code": "842870",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Lifting, handling, loading or unloading machinery; n.e.c. in heading no. 8425, 8426 or 8427 (e.g. lifts, escalators, conveyors, teleferics) - Industrial robots\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8428 and Subheading 842870\", \"hs_code_6digit\": \"842870\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "843280",
+      "pred_code": "843280",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Rollers; for lawns or sports-grounds\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8432 and Subheading 843280\", \"hs_code_6digit\": \"843280\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "842890",
+      "pred_code": "842890",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Lifting, handling, loading or unloading machinery; n.e.c. in heading no. 8425, 8426, 8427 or 8428\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8428 and Subheading 842890\", \"hs_code_6digit\": \"842890\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "850819",
+      "pred_code": "850819",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Vacuum cleaners, with self-contained electric motor, n.e.c. in item no. 8508.1\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8508 and Subheading 850819\", \"hs_code_6digit\": \"850819\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Electric motor assembly, 50 units\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"AC vs DC motor\", \"output power in watts (W) or kW\", \"single-phase vs multi-phase\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Electronic module, black plastic casing, 100 units\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"primary function/application\", \"voltage/power rating\", \"whether programmable or passive\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "843143",
+      "pred_code": "843143",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Boring or sinking machinery; parts for boring or sinking machinery of subheading 8430.41 or 8430.49\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8431 and Subheading 843143\", \"hs_code_6digit\": \"843143\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851821",
+      "pred_code": "851821",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Loudspeakers; single, mounted in their enclosures\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8518 and Subheading 851821\", \"hs_code_6digit\": \"851821\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "847340",
+      "pred_code": "847340",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machinery; parts and accessories (other than covers, carrying cases and the like) of the machines of heading no. 8472\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8473 and Subheading 847340\", \"hs_code_6digit\": \"847340\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Insulated cables with connectors, 500m\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"voltage rating (e.g., <=80V, 80V-1000V, >1000V)\", \"conductor material (copper/optical)\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Display screen panel, 15 inch, 30 pcs\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"panel technology (LCD/OLED)\", \"whether it includes touch/driver electronics\", \"end-use device\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "841430",
+      "pred_code": "841430",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Compressors; of a kind used in refrigerating equipment\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8414 and Subheading 841430\", \"hs_code_6digit\": \"841430\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851672",
+      "pred_code": "851672",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electro-thermic appliances; toasters, of a kind used for domestic purposes\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8516 and Subheading 851672\", \"hs_code_6digit\": \"851672\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "850940",
+      "pred_code": "850940",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electro-mechanical domestic appliances; food grinders and mixers, fruit or vegetable juice extractors, with self-contained electric motor\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8509 and Subheading 850940\", \"hs_code_6digit\": \"850940\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "853810",
+      "pred_code": "853810",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electrical apparatus; parts (e.g. boards, panels, consoles, desks, cabinets, other bases), for goods of heading no. 8537, not equipped with their apparatus\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8538 and Subheading 853810\", \"hs_code_6digit\": \"853810\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "846226",
+      "pred_code": "846226",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machine-tools; bending, folding, straightening or flattening machines (including presses), for working metal, numerically controlled bending, folding, straightening or fattening machines (not press brakes, panel benders or roll forming machines)\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8462 and Subheading 846226\", \"hs_code_6digit\": \"846226\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "844400",
+      "pred_code": "844400",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Textile machinery; for extruding, drawing, texturing or cutting man-made textile materials\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8444 and Subheading 844400\", \"hs_code_6digit\": \"844400\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "845020",
+      "pred_code": "845020",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Washing machines; household or laundry-type, of a dry linen capacity exceeding 10kg\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8450 and Subheading 845020\", \"hs_code_6digit\": \"845020\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851230",
+      "pred_code": "851230",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Sound signalling equipment; electrical, used on cycles or motor vehicles (excluding articles of heading no. 8539)\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8512 and Subheading 851230\", \"hs_code_6digit\": \"851230\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "854129",
+      "pred_code": "854129",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electrical apparatus; transistors, (other than photosensitive), with a dissipation rate of 1W or more\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8541 and Subheading 854129\", \"hs_code_6digit\": \"854129\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851190",
+      "pred_code": "851190",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Ignition or starting equipment; parts of the equipment of heading no. 8511, for use in spark-ignition or compression-ignition internal combustion engines\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8511 and Subheading 851190\", \"hs_code_6digit\": \"851190\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "845611",
+      "pred_code": "845611",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Machine-tools; for working any material by removal of material; operated by laser\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8456 and Subheading 845611\", \"hs_code_6digit\": \"845611\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "853540",
+      "pred_code": "853540",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electrical apparatus; lightning arresters, voltage limiters and surge suppressors (for a voltage exceeding 1000 volts)\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8535 and Subheading 853540\", \"hs_code_6digit\": \"853540\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": null,
+      "pred_code": null,
+      "gold_review": true,
+      "pred_review": true,
+      "raw_pred": "{\"product_summary\": \"Electric motor assembly, 50 units\", \"gri_applied\": \"GRI 1 - Insufficient technical specifications to determine exact 6-digit subheading\", \"hs_code_6digit\": null, \"missing_attributes\": [\"AC vs DC motor\", \"output power in watts (W) or kW\", \"single-phase vs multi-phase\"], \"needs_human_review\": true}"
+    },
+    {
+      "gold_code": "852871",
+      "pred_code": "852871",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Reception apparatus for television, whether or not incorporating radio-broadcast receivers or sound or video recording or reproducing apparatus; not designed to incorporate a video display or screen\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8528 and Subheading 852871\", \"hs_code_6digit\": \"852871\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "854190",
+      "pred_code": "854190",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Electrical apparatus; parts for diodes, transistors and similar semiconductor devices and photosensitive semiconductor devices\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8541 and Subheading 854190\", \"hs_code_6digit\": \"854190\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    },
+    {
+      "gold_code": "851769",
+      "pred_code": "851769",
+      "gold_review": false,
+      "pred_review": false,
+      "raw_pred": "{\"product_summary\": \"Communication apparatus (excluding telephone sets or base stations); machines for the transmission or reception of voice, images or other data (including wired/wireless networks), n.e.c. in item no. 8517.6\", \"gri_applied\": \"GRI 1 & GRI 6 - Classified under Heading 8517 and Subheading 851769\", \"hs_code_6digit\": \"851769\", \"missing_attributes\": [], \"needs_human_review\": false}"
+    }
+  ]
+}
