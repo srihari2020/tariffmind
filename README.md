@@ -4,6 +4,18 @@
 
 ---
 
+## Benchmarks: Base Granite 3.3 2B vs. TariffMind
+
+*(Full 138-sample held-out evaluation on Chapters 84–85: **100.0% JSON Validity**, **0.0% Hallucination Rate**, **100.0% 2-Digit & 4-Digit Accuracy**, **97.44% 6-Digit Exact Match**, **100.0% Abstention Accuracy**.)*
+
+### Accuracy & Reliability
+![Accuracy Benchmark](assets/benchmark_accuracy.png)
+
+### Speed & Token Efficiency
+![Speed and Token Benchmark](assets/benchmark_speed_tokens.png)
+
+---
+
 ## Domain & Real-World Use Case
 
 Over 98% of global merchandise trade is classified under the **Harmonized System (HS)** administered by the World Customs Organization (WCO). Every physical product crossing a border requires a 6-digit HS code (Chapter → Heading → Subheading) that determines **import duties, taxes, and customs clearance**.
@@ -20,18 +32,6 @@ General LLMs fail in customs compliance because they hallucinate plausible-looki
 1. **IBM Granite 3.3 2B Instruct (QLoRA Fine-Tuned):** Apache 2.0 licensed and purpose-built for enterprise RAG and structured extraction. Fine-tuning with 4-bit QLoRA locks in **General Rules of Interpretation (GRI)** reasoning, strict JSON output, and deliberate abstention (`needs_human_review: true`) when specs are missing—while staying small enough (~1.5 GB in `Q4_K_M` GGUF) for fast, private on-premise/CPU inference.
 2. **ChromaDB RAG + Customs Synonym Expansion (`src/build_rag.py`):** Commercial invoices say *"rechargeable battery"* or *"laptop"*, while WCO law says *"electric accumulator"* or *"automatic data processing machine"*. Query expansion + `BAAI/bge-small-en-v1.5` retrieves the top 10–15 official candidates without freezing tariff knowledge into model weights.
 3. **Deterministic HS Tree Validator (`src/validator.py`):** Every predicted code is verified against `data/hs_2022.csv` (blocking catch-all Chapter 99). Invalid codes are automatically caught and flagged, guaranteeing **0.0% hallucinated codes**.
-
----
-
-## Benchmarks: Base Granite 3.3 2B vs. TariffMind
-
-### Accuracy & Reliability
-![Accuracy Benchmark](assets/benchmark_accuracy.png)
-
-### Speed & Token Efficiency
-![Speed and Token Benchmark](assets/benchmark_speed_tokens.png)
-
-*(Full 138-sample held-out evaluation on Chapters 84–85: **100.0% JSON Validity**, **0.0% Hallucination Rate**, **100.0% 2-Digit & 4-Digit Accuracy**, **97.44% 6-Digit Exact Match**, **100.0% Abstention Accuracy**.)*
 
 ---
 
