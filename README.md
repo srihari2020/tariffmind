@@ -2,47 +2,49 @@
 
 **TariffMind** is a domain-closed customs classification engine that maps messy commercial invoice descriptions to legally structured 6-digit **Harmonized System (HS 2022)** tariff codes.
 
-It combines **ChromaDB RAG** over the official WCO HS 2022 nomenclature, a **QLoRA fine-tuned IBM Granite 3.3** model for General Rules of Interpretation (GRI) reasoning, and a **deterministic HS tree validator** that guarantees **0.0% hallucinated codes**.
+---
+
+## Domain & Real-World Use Case
+
+Over 98% of global merchandise trade is classified under the **Harmonized System (HS)** administered by the World Customs Organization (WCO). Every physical product crossing a border requires a 6-digit HS code (Chapter → Heading → Subheading) that determines **import duties, taxes, and customs clearance**.
+
+* **The Bottleneck:** Customs brokers and freight forwarders manually classify thousands of messy commercial invoice line items against 5,612+ legal subheadings. Misclassification leads to port delays, fines, and tax audits.
+* **The Use Case:** Automated pre-clearance triage for **e-commerce logistics, freight forwarders, and ERP/customs brokerage pipelines**—converting raw supplier descriptions into ERP-ready JSON with verified 6-digit HS codes, while automatically routing underspecified items to human brokers.
 
 ---
 
-## Benchmark Results (Chapters 84–85: Electronics & Machinery)
+## Why IBM Granite 3.3 + RAG + Deterministic Guardrail?
 
-Evaluated on **138 held-out test samples** (`data/eval_gri.jsonl`) including underspecified invoice items:
+General LLMs fail in customs compliance because they hallucinate plausible-looking 6-digit codes, break JSON schemas, and guess when critical technical specs are missing. TariffMind closes the domain with a 3-layer architecture:
 
-| Metric | Score |
-| :--- | :---: |
-| **JSON Schema Validity** | **100.0%** |
-| **Hallucination Rate** | **0.0%** |
-| **2-Digit Accuracy (Chapter)** | **100.0%** |
-| **4-Digit Accuracy (Heading)** | **100.0%** |
-| **6-Digit Exact Match (Subheading)** | **97.44%** |
-| **Abstention Accuracy (Human Review)** | **100.0%** |
+1. **IBM Granite 3.3 2B Instruct (QLoRA Fine-Tuned):** Apache 2.0 licensed and purpose-built for enterprise RAG and structured extraction. Fine-tuning with 4-bit QLoRA locks in **General Rules of Interpretation (GRI)** reasoning, strict JSON output, and deliberate abstention (`needs_human_review: true`) when specs are missing—while staying small enough (~1.5 GB in `Q4_K_M` GGUF) for fast, private on-premise/CPU inference.
+2. **ChromaDB RAG + Customs Synonym Expansion (`src/build_rag.py`):** Commercial invoices say *"rechargeable battery"* or *"laptop"*, while WCO law says *"electric accumulator"* or *"automatic data processing machine"*. Query expansion + `BAAI/bge-small-en-v1.5` retrieves the top 10–15 official candidates without freezing tariff knowledge into model weights.
+3. **Deterministic HS Tree Validator (`src/validator.py`):** Every predicted code is verified against `data/hs_2022.csv` (blocking catch-all Chapter 99). Invalid codes are automatically caught and flagged, guaranteeing **0.0% hallucinated codes**.
 
 ---
 
-## Architecture
+## Benchmarks: Base Granite 3.3 2B vs. TariffMind
 
-1. **Candidate Retrieval (`src/build_rag.py`):** Embeds all 5,613 WCO HS 2022 subheadings (chained with Chapter and Heading context) into ChromaDB using `BAAI/bge-small-en-v1.5` and retrieves the top-10 candidates per query.
-2. **Fine-Tuned Reasoning (`src/train_granite.py`):** 4-bit QLoRA fine-tune of `unsloth/granite-3.3-2b-instruct` (supports `8b` via `--model`) trained to apply GRI rules and output strict JSON—or abstain (`needs_human_review: true`) when critical technical specs are missing.
-3. **Deterministic Guardrail (`src/validator.py`):** Validates every predicted 6-digit code against `data/hs_2022.csv` (blocking catch-all Chapter 99) and reconstructs the official Section → Chapter → Heading → Subheading hierarchy.
-4. **Interactive UI (`app.py`):** Streamlit app supporting single-item classification, batch commercial invoice CSV processing, and a live evaluation dashboard.
+### Accuracy & Reliability
+![Accuracy Benchmark](assets/benchmark_accuracy.png)
+
+### Speed & Token Efficiency
+![Speed and Token Benchmark](assets/benchmark_speed_tokens.png)
+
+*(Full 138-sample held-out evaluation on Chapters 84–85: **100.0% JSON Validity**, **0.0% Hallucination Rate**, **100.0% 2-Digit & 4-Digit Accuracy**, **97.44% 6-Digit Exact Match**, **100.0% Abstention Accuracy**.)*
 
 ---
 
-## Project Structure
+## Quick Start
 
-```text
-tariffmind/
-├── data/
-│   ├── hs_2022.csv            # Official WCO HS 2022 hierarchy
-│   ├── train_gri.jsonl        # Fine-tuning dataset (782 samples)
-│   ├── eval_gri.jsonl         # Held-out evaluation set (138 samples)
-│   └── eval_results.json      # Benchmark output
-├── src/
-│   ├── build_rag.py           # ChromaDB HS 2022 indexer & retriever
-│   ├── validator.py           # Deterministic zero-hallucination validator
-│   ├── generate_dataset.py    # Messy invoice + abstention dataset generator
-│   ├── train_granite.py       # Unsloth 4-bit QLoRA fine-tuning + GGUF export
-│   └── eval.py                # Hierarchical evaluation harness
-└── app.py                     # Streamlit web interface
+```bash
+# 1. Setup environment
+uv venv .venv --python 3.12 && source .venv/bin/activate
+uv pip install unsloth --torch-backend=auto
+uv pip install chromadb sentence-transformers pandas streamlit pyhscodes matplotlib
+
+# 2. Build ChromaDB HS 2022 RAG index
+python src/build_rag.py
+
+# 3. Launch Streamlit UI
+streamlit run app.py
